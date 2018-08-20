@@ -1,10 +1,6 @@
 "use strict";
 
 function PhabricatorCoverageReport(opts) {
-  debugger;
-  console.log("OPTIONS:");
-  console.log(JSON.stringify(opts));
-
   this.file = opts.file || "phabricator_data.json";
   this.format = opts.format === "json" ?  "json": "uri" ;
   this.summaries = {};
