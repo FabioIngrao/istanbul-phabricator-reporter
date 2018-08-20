@@ -2,7 +2,7 @@
 
 function PhabricatorCoverageReport(opts) {
   this.file = opts.file || "phabricator_data.json";
-  this.format = opts.format === "json" ?  "json": "uri" ;
+  this.format = opts.format === "uri" ?  "uri": "json" ;
   this.summaries = {};
 }
 
